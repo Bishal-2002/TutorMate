@@ -21,7 +21,7 @@
     "express-session": "^1.17.3",
     "joi": "^17.9.2",
     "method-override": "^3.0.0",
-    "mongoose": "^5.13.17",
+    "mongoose": "^7.3.0",
     "multer": "^1.4.5-lts.1",
     "multer-storage-cloudinary": "^4.0.0",
     "passport": "^0.6.0",
