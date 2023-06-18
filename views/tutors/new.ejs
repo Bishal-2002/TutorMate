@@ -1,0 +1,61 @@
+<% layout('layouts/boilerplate') %>
+<div class="row my-5">
+    <h1 class="text-center">New Post</h1>
+    <div class="col-md-6 offset-md-3">
+        <form action="/tutors" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="title">Name</label>
+                <input class="form-control" type="text" id="title" name="tutor[title]" required placeholder="Bishal Kundu" autofocus>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="address">Address</label>
+                <input class="form-control" type="text" id="address" name="tutor[address]" required placeholder="ABC Road, Pincode">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="city">City</label>
+                <input class="form-control" type="text" id="city" name="tutor[city]" required placeholder="Mumbai">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="country">Country</label>
+                <input class="form-control" type="text" id="country" name="tutor[country]" required placeholder="India">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="subjects">Subjects</label>
+                <input class="form-control" type="text" id="subjects" name="subjects" required placeholder="Maths, Physics, ...">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <!-- <div class="mb-3">
+                <label for="images" class="form-label">Add Images</label>
+                <input class="form-control" type="file" id="images" name="images" multiple>
+            </div> -->
+            <div class="mb-3">
+                <label class="form-label" for="price">Fees</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="price-label">INR</span>
+                    <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
+                        aria-describedby="price-label" name="tutor[price]" required placeholder="1000">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please fill out the field!</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="tutor[description]" required placeholder="About you..."></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add Tutor</button>
+            </div>
+        </form>
+    </div>
+</div>

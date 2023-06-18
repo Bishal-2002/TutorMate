@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&family=Roboto:wght@400;500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --navbar-bg-col-dark: #36393b;
+    --bg-col: #232526;
+    --main-text-col: #d2cec9;
+}
+
+.bg-dark-nav{
+    background-color: var(--navbar-bg-col-dark);
+}
+
+.dark{
+    background-color: var(--bg-col);
+    color: var(--main-text-col);
+}
+

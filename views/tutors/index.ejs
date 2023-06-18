@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+<div class="container my-5 px-0">
+    <h1 class="my-5 text-center  display-1">All Posts</h1>
+    <% for(let tutor of tutors){ %>
+      <div class="card my-3">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="img-fluid rounded-start" style="height: 100%">
+            </div>
+            <div class="col-md-8 align-self-center">
+                <div class="card-body">
+                    <h5 class="card-title"><%= tutor.title %> </h5>
+                    <p class="card-text"><%= tutor.description %></p>
+                    <p class="card-text">
+                        <small class="text-muted"><%= tutor.city%>, <%= tutor.country %></small>
+                    </p>
+                    <a class="btn btn-primary" href="/tutors/<%=tutor._id%>">View</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    <% } %>
+</div>

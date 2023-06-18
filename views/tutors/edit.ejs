@@ -1,0 +1,61 @@
+<% layout('layouts/boilerplate') %>
+<div class="row my-5">
+    <h1 class="text-center">Edit Post</h1>
+    <div class="col-md-6 offset-md-3">
+        <form action="/tutors/<%= tutor._id %>?_method=put" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="title">Name</label>
+                <input class="form-control" type="text" id="title" name="tutor[title]" required value="<%= tutor.title %>">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="address">Address</label>
+                <input class="form-control" type="text" id="address" name="tutor[address]" required value="<%= tutor.address %>">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="city">City</label>
+                <input class="form-control" type="text" id="city" name="tutor[city]" required value="<%= tutor.city %>">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="country">Country</label>
+                <input class="form-control" type="text" id="country" name="tutor[country]" required value="<%= tutor.country %>">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="subjects">Subjects</label>
+                <input class="form-control" type="text" id="subjects" name="subjects" required value="<%= subjects %>">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <!-- <div class="mb-3">
+                <label for="images" class="form-label">Add Images</label>
+                <input class="form-control" type="file" id="images" name="images" multiple>
+            </div> -->
+            <div class="mb-3">
+                <label class="form-label" for="price">Fees</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="price-label">INR</span>
+                    <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
+                        aria-describedby="price-label" name="tutor[price]" required value="<%= tutor.price %>">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please fill out the field!</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="tutor[description]" required><%= tutor.description %></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please fill out the field!</div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Edit Tutor</button>
+            </div>
+        </form>
+    </div>
+</div>
